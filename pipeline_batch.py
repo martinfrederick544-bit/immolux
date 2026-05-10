@@ -14,7 +14,7 @@ urllib3.disable_warnings()
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
 OBJECTIF = int(sys.argv[1]) if len(sys.argv) > 1 else 30
-MIN_AVIS = 3
+MIN_AVIS = 0
 SEARCHES = []  # rempli dynamiquement ou passé en argument
 
 KEY      = "pit-f9b378fe-1099-4bb3-8e92-9cbdfe48721b"
@@ -132,9 +132,18 @@ def scraper_emails(url):
     except:
         return []
 
+def domaine_site(site):
+    """Extrait le domaine racine du site (ex: lotus-design.ca)."""
+    try:
+        h = site.split("//")[-1].split("/")[0].lower()
+        return re.sub(r"^www\.", "", h)
+    except:
+        return ""
+
 def trouver_email(site):
     if not site: return ""
     if not site.startswith("http"): site = "https://" + site
+    dom = domaine_site(site)
     def score(e):
         for p in ["info","contact","courriel","admin","vente","service","reception","accueil"]:
             if e.startswith(p+"@"): return 0
@@ -145,6 +154,13 @@ def trouver_email(site):
             emails = scraper_emails(site.rstrip("/")+c)
             if emails: break
     if not emails: return ""
+    # Filtrer : l'email doit appartenir au même domaine que le site
+    if dom:
+        emails_valides = [e for e in emails if e.split("@")[-1] == dom]
+        if emails_valides:
+            emails_valides.sort(key=score)
+            return emails_valides[0]
+    # Fallback sans filtre domaine si aucun email correspondant
     emails.sort(key=score)
     return emails[0]
 
