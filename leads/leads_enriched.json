@@ -1,29 +1,5 @@
 [
   {
-    "nom": "L'Atelier collaboratif de l'Outaouais INC.",
-    "note": 5.0,
-    "nbAvis": 40,
-    "tel": "+1 819-771-1212",
-    "adresse": "450 Rue de Vernon, Gatineau, QC J9J 3K5, Canada",
-    "siteWeb": "http://acoutaouais.ca/",
-    "urlMaps": "https://www.google.com/maps/place/L%27Atelier+collaboratif+de+l%27Outaouais+INC./data=!4m7!3m6!1s0x4cce0300719b2c7b:0xc44df100a1469186!8m2!3d45.4434804!4d-75.7995435!16s%2Fg%2F11vt7j8_wy!19sChIJeyybcQADzkwRhpFGoQDxTcQ?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "info@yoursite.com",
-    "type_atelier": "atelier de fabrication mecanique",
-    "dateCollecte": "2026-05-10T12:32:09Z"
-  },
-  {
-    "nom": "Lotus Design Inc.",
-    "note": 5.0,
-    "nbAvis": 41,
-    "tel": "+1 819-639-6816",
-    "adresse": "367 Mnt de la Source unit 314, Cantley, Quebec J8V 0G6, Canada",
-    "siteWeb": "http://www.lotus-design.ca/",
-    "urlMaps": "https://www.google.com/maps/place/Lotus+Design+Inc./data=!4m7!3m6!1s0x4cce1d3d12449e03:0xa5f04945bec61812!8m2!3d45.5347235!4d-75.7729177!16s%2Fg%2F11fvnpk7z8!19sChIJA55EEj0dzkwREhjGvkVJ8KU?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "info@lotus-design.ca",
-    "type_atelier": "atelier de fabrication mecanique",
-    "dateCollecte": "2026-05-10T12:38:22Z"
-  },
-  {
     "nom": "Metalium Inc",
     "note": 3.8,
     "nbAvis": 16,
@@ -32,7 +8,7 @@
     "siteWeb": "http://www.metalium.com/",
     "urlMaps": "https://www.google.com/maps/place/Metalium+Inc/data=!4m7!3m6!1s0x4cce10d01ea65e85:0x69aee2a5b28bb8f7!8m2!3d45.5111649!4d-75.5591765!16s%2Fg%2F1tg812b2!19sChIJhV6mHtAQzkwR97iLsqXirmk?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@metalium.com",
-    "type_atelier": "atelier de fabrication mecanique",
+    "type_atelier": "atelier de fabrication metallique",
     "dateCollecte": "2026-05-10T12:38:53Z"
   },
   {
@@ -44,7 +20,7 @@
     "siteWeb": "http://www.metanox.ca/",
     "urlMaps": "https://www.google.com/maps/place/Metanox+-+Gatineau+-+Usinage+%2F+Fabrication+%2F+Machiniste+%2F+Soudure/data=!4m7!3m6!1s0x4cce1a66f56e4017:0xd4de2ef57cfc9617!8m2!3d45.5122!4d-75.5590285!16s%2Fg%2F1v6wnz2r!19sChIJF0Bu9WYazkwRF5b8fPUu3tQ?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@metanox.ca",
-    "type_atelier": "atelier d'usinage et soudure",
+    "type_atelier": "atelier d'usinage et fabrication metallique",
     "dateCollecte": "2026-05-10T12:53:03Z"
   },
   {
@@ -56,7 +32,7 @@
     "siteWeb": "https://siout.ca/",
     "urlMaps": "https://www.google.com/maps/place/Services+Industriels+Outaouais+Inc.+Soudure+Gatineau+-+Hydraulique+-+Usinage/data=!4m7!3m6!1s0x4cce1a6649e036d1:0x42325f06fb5887eb!8m2!3d45.4994712!4d-75.6265562!16s%2Fg%2F1v6wnz2q!19sChIJ0TbgSWYazkwR64dY-wZfMkI?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@siout.ca",
-    "type_atelier": "atelier d'usinage et soudure",
+    "type_atelier": "services industriels et soudure",
     "dateCollecte": "2026-05-10T12:53:15Z"
   },
   {
@@ -68,7 +44,7 @@
     "siteWeb": "http://conceptprometal.ca/",
     "urlMaps": "https://www.google.com/maps/place/Concept+Pro-M%C3%A9tal/data=!4m7!3m6!1s0x4cce1b64a997b907:0xc78f095a2d0b0945!8m2!3d45.5154318!4d-75.5659042!16s%2Fg%2F1v27v3nj!19sChIJB7mXqWQbzkwRRQkLLVoJj8c?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@conceptprometal.ca",
-    "type_atelier": "atelier de fabrication mecanique",
+    "type_atelier": "atelier de fabrication metallique",
     "dateCollecte": "2026-05-10T12:54:16Z"
   },
   {
@@ -80,7 +56,7 @@
     "siteWeb": "http://distributionmegaaluminium.com/",
     "urlMaps": "https://www.google.com/maps/place/Distribution+M%C3%A9ga+aluminium/data=!4m7!3m6!1s0x4cce1ae07f9e3b97:0x66b6008ca36e1758!8m2!3d45.4760322!4d-75.6650085!16s%2Fg%2F11clzr7k8g!19sChIJlzuef-AazkwRWBduo4wAtmY?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "commande@megaaluminium.ca",
-    "type_atelier": "atelier de fabrication mecanique",
+    "type_atelier": "distributeur aluminium industriel",
     "dateCollecte": "2026-05-10T12:54:34Z"
   },
   {
@@ -92,20 +68,8 @@
     "siteWeb": "https://tolerieoutaouais.com/",
     "urlMaps": "https://www.google.com/maps/place/Tolerie+Outaouai/data=!4m7!3m6!1s0x4cce1ae27bbeb405:0x90807abe64044bef!8m2!3d45.5143035!4d-75.5653587!16s%2Fg%2F11b5wgbxx9!19sChIJBbS-e-IazkwR70sEZL56gJA?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@tolerieoutaouais.com",
-    "type_atelier": "atelier de fabrication mecanique",
+    "type_atelier": "atelier de tolerie industrielle",
     "dateCollecte": "2026-05-10T12:54:40Z"
-  },
-  {
-    "nom": "Toiture S.Bujold inc",
-    "note": 5.0,
-    "nbAvis": 3,
-    "tel": "+1 819-664-7693",
-    "adresse": "",
-    "siteWeb": "https://www.toituresbujold.com/",
-    "urlMaps": "https://www.google.com/maps/place/Toiture+S.Bujold+inc/@45.485499,-75.6269264,11z/data=!3m1!4b1!4m6!3m5!1s0x4cce1bb2aa93a71f:0xc344119c8052de1a!8m2!3d45.485499!4d-75.6269264!16s%2Fg%2F11fnbmk22b?authuser=0&hl=fr&entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D",
-    "emailTrouve": "toiture.sbujold@gmail.com",
-    "type_atelier": "atelier de fabrication mecanique",
-    "dateCollecte": "2026-05-10T12:54:48Z"
   },
   {
     "nom": "Ottawa Valley Metal Inc",
@@ -116,44 +80,8 @@
     "siteWeb": "http://ottawavalleymetalinc.com/",
     "urlMaps": "https://www.google.com/maps/place/Ottawa+Valley+Metal+Inc/data=!4m7!3m6!1s0x4cce1031836163a5:0xdcc3d061b6323f27!8m2!3d45.4601542!4d-75.5829661!16s%2Fg%2F1v4k642r!19sChIJpWNhgzEQzkwRJz8ytmHQw9w?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@ovminc.ca",
-    "type_atelier": "atelier de fabrication mecanique",
+    "type_atelier": "atelier de fabrication metallique",
     "dateCollecte": "2026-05-10T12:55:23Z"
-  },
-  {
-    "nom": "Toitures D.S",
-    "note": 4.9,
-    "nbAvis": 167,
-    "tel": "+1 819-525-9401",
-    "adresse": "39 Rue de Bécancour, Gatineau, QC J8P 7X5, Canada",
-    "siteWeb": "http://www.toituresds.ca/",
-    "urlMaps": "https://www.google.com/maps/place/Toitures+D.S/data=!4m7!3m6!1s0x4cce1b1b12e95caf:0x841912e81f4e0896!8m2!3d45.5002595!4d-75.6280076!16s%2Fg%2F11flpltkjz!19sChIJr1zpEhsbzkwRlghOH-gSGYQ?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "info@toituresds.ca",
-    "type_atelier": "atelier de fabrication mecanique",
-    "dateCollecte": "2026-05-10T12:55:44Z"
-  },
-  {
-    "nom": "Entreprise Méta-Link",
-    "note": 3.9,
-    "nbAvis": 7,
-    "tel": "+1 819-281-8930",
-    "adresse": "119 Ch des Fabriques, L'Ange-Gardien, QC J8L 0A9, Canada",
-    "siteWeb": "http://www.meta-link.ca/",
-    "urlMaps": "https://www.google.com/maps/place/Entreprise+M%C3%A9ta-Link/data=!4m7!3m6!1s0x4cce3e53f2edfaa5:0xf274031660756ac!8m2!3d45.609546!4d-75.397753!16s%2Fg%2F11g6987262!19sChIJpfrt8lM-zkwRrFYHZjFAJw8?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "info@meta-link.ca",
-    "type_atelier": "atelier de fabrication mecanique",
-    "dateCollecte": "2026-05-10T12:55:57Z"
-  },
-  {
-    "nom": "uDesign Solutions",
-    "note": 5.0,
-    "nbAvis": 6,
-    "tel": "+1 613-745-3551",
-    "adresse": "30 McArthur Ave., Ottawa, ON K1L 6R2, Canada",
-    "siteWeb": "https://www.udesignsolutions.ca/",
-    "urlMaps": "https://www.google.com/maps/place/uDesign+Solutions/data=!4m7!3m6!1s0x4cce0528a77393bd:0x2f106c561218977c!8m2!3d45.4307086!4d-75.6673255!16s%2Fg%2F11hyjvx4d5!19sChIJvZNzpygFzkwRfJcYElZsEC8?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "info@udesignsolutions.ca",
-    "type_atelier": "atelier de fabrication mecanique",
-    "dateCollecte": "2026-05-10T12:56:58Z"
   },
   {
     "nom": "Capital Machining Services",
@@ -164,7 +92,7 @@
     "siteWeb": "http://www.capitalmachining.ca/",
     "urlMaps": "https://www.google.com/maps/place/Capital+Machining+Services/data=!4m7!3m6!1s0x4cce05d0c2b406e7:0xe6184ab684eb5164!8m2!3d45.4002108!4d-75.7076934!16s%2Fg%2F11ptz6jwkv!19sChIJ5wa0wtAFzkwRZFHrhLZKGOY?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@capitalmachining.ca",
-    "type_atelier": "atelier de fabrication mecanique",
+    "type_atelier": "atelier d'usinage CNC",
     "dateCollecte": "2026-05-10T12:57:15Z"
   },
   {
@@ -188,56 +116,8 @@
     "siteWeb": "https://hydraulichrome.com/",
     "urlMaps": "https://www.google.com/maps/place/Hydrauli-Chrome+Inc./data=!4m7!3m6!1s0x4cce0f9e76deb171:0x40d663aea91cc36!8m2!3d45.4152465!4d-75.630351!16s%2Fg%2F1v3kh3qm!19sChIJcbHedp4PzkwRNsyR6jpmDQQ?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "support@hydraulichrome.com",
-    "type_atelier": "atelier de fabrication mecanique",
+    "type_atelier": "service de chromage et traitement de surface",
     "dateCollecte": "2026-05-10T12:58:09Z"
-  },
-  {
-    "nom": "C & R Développement Inc",
-    "note": 4.5,
-    "nbAvis": 6,
-    "tel": "+1 819-685-2288",
-    "adresse": "1161 Chem. Vanier, Gatineau, QC J9J 3W9, Canada",
-    "siteWeb": "https://www.crdev.com/",
-    "urlMaps": "https://www.google.com/maps/place/C+%26+R+D%C3%A9veloppement+Inc/data=!4m7!3m6!1s0x4cce028c065b47c7:0x2551a67232011edb!8m2!3d45.4433902!4d-75.8192004!16s%2Fg%2F1t_wnzrw!19sChIJx0dbBowCzkwR2x4BMnKmUSU?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "crdev@crdev.com",
-    "type_atelier": "atelier de fabrication mecanique",
-    "dateCollecte": "2026-05-10T12:59:03Z"
-  },
-  {
-    "nom": "Toiture Morin - Division Gatineau",
-    "note": 4.6,
-    "nbAvis": 91,
-    "tel": "+1 819-777-1817",
-    "adresse": "55 Rue Breadner, Gatineau, QC J8Y 2L7, Canada",
-    "siteWeb": "http://www.morintoiture.com/",
-    "urlMaps": "https://www.google.com/maps/place/Toiture+Morin+-+Division+Gatineau/data=!4m7!3m6!1s0x4cce049af36e579d:0xb0c3768d19cd095!8m2!3d45.4379495!4d-75.727683!16s%2Fg%2F1tfchc_w!19sChIJnVdu85oEzkwRldCc0Wg3DAs?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "info1@morintoiture.com",
-    "type_atelier": "atelier de fabrication mecanique",
-    "dateCollecte": "2026-05-10T13:00:12Z"
-  },
-  {
-    "nom": "Les Entreprises Simon Benoît",
-    "note": 5.0,
-    "nbAvis": 2,
-    "tel": "+1 819-743-1271",
-    "adresse": "135 Av. Gatineau LOCAL E, Gatineau, Quebec J8T 4J7, Canada",
-    "siteWeb": "https://www.entreprise-esb.ca/",
-    "urlMaps": "https://www.google.com/maps/place/Les+Entreprises+Simon+Beno%C3%AEt/data=!4m7!3m6!1s0x6de3b9e62b963ca7:0xe08980f42104c32c!8m2!3d45.4855889!4d-75.7181336!16s%2Fg%2F11wbfs20kb!19sChIJpzyWK-a5420RLMMEIfSAieA?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "sbenoit@entreprise-esb.ca",
-    "type_atelier": "atelier de fabrication mecanique",
-    "dateCollecte": "2026-05-10T13:01:41Z"
-  },
-  {
-    "nom": "Toitures Cossette - Cossette Roofing",
-    "note": 4.5,
-    "nbAvis": 55,
-    "tel": "+1 819-777-7177",
-    "adresse": "14 Rue Buteau, Gatineau, QC J8Z 1X4, Canada",
-    "siteWeb": "https://www.toiturescossette.ca/",
-    "urlMaps": "https://www.google.com/maps/place/Toitures+Cossette+-+Cossette+Roofing/data=!4m7!3m6!1s0x4cce035833eb74c7:0x1504d344ea02dd21!8m2!3d45.4640546!4d-75.7323729!16s%2Fg%2F11b66hc8g0!19sChIJx3TrM1gDzkwRId0C6kTTBBU?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "vincent@toiturescossette.ca",
-    "type_atelier": "atelier de fabrication mecanique",
-    "dateCollecte": "2026-05-10T13:01:58Z"
   },
   {
     "nom": "Soudure Marc Marine",
@@ -266,19 +146,6 @@
     "dateCollecte": "2026-05-10T13:18:07Z"
   },
   {
-    "nom": "Kenco Construction",
-    "categorie_gmap": "Entrepreneur de cloisons sèches",
-    "note": 5.0,
-    "nbAvis": 1,
-    "tel": "+1 819-616-3683",
-    "adresse": "43 Chem. du Point-de-Vue, Val-des-Monts, QC J8Y 3L8, Canada",
-    "siteWeb": "https://www.kenco-construction.ca/",
-    "urlMaps": "https://www.google.com/maps/place/Kenco+Construction/data=!4m7!3m6!1s0x4cce11cae3619f77:0x34d66b62e4162a2f!8m2!3d45.4376956!4d-75.7274045!16s%2Fg%2F11sghjrwtx!19sChIJd59h48oRzkwRLyoW5GJr1jQ?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "info@kenco-construction.ca",
-    "type_atelier": "entreprise de fabrication et transformation",
-    "dateCollecte": "2026-05-10T13:18:32Z"
-  },
-  {
     "nom": "Breton Mécanique Industrielle Inc.",
     "categorie_gmap": "Entretien de machines",
     "note": 5.0,
@@ -288,7 +155,7 @@
     "siteWeb": "http://www.bretonmecanique.com/",
     "urlMaps": "https://www.google.com/maps/place/Breton+M%C3%A9canique+Industrielle+Inc./@45.8465154,-72.8750351,9z/data=!3m1!4b1!4m6!3m5!1s0x4cc9cf940734f46b:0xb2eb193f83c6a06e!8m2!3d45.8465154!4d-72.8750351!16s%2Fg%2F11h1jxd9bv?authuser=0&hl=fr&entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D",
     "emailTrouve": "y.breton@bretonmecanique.com",
-    "type_atelier": "atelier de fabrication metallique",
+    "type_atelier": "entretien et reparation de machines industrielles",
     "dateCollecte": "2026-05-10T13:20:27Z"
   },
   {
@@ -301,21 +168,8 @@
     "siteWeb": "http://www.groupecarbonneau.com/",
     "urlMaps": "https://www.google.com/maps/place/Groupe+Carbonneau/data=!4m7!3m6!1s0x4cc9da3722f36889:0xd1d4f211f6ac52e9!8m2!3d45.3096145!4d-72.6653055!16s%2Fg%2F1tf57hv8!19sChIJiWjzIjfayUwR6VKs9hHy1NE?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@groupecarbonneau.com",
-    "type_atelier": "entreprise de fabrication et transformation",
+    "type_atelier": "fabricant de produits industriels",
     "dateCollecte": "2026-05-10T13:20:59Z"
-  },
-  {
-    "nom": "SIC Experts",
-    "categorie_gmap": "Fabricant",
-    "note": null,
-    "nbAvis": 0,
-    "tel": "+1 450-534-5343",
-    "adresse": "96 Rue Unifix, Bromont, QC J2L 1N6, Canada",
-    "siteWeb": "https://sicexperts.com/?utm_source=google&utm_medium=mybusiness&utm_content=lien_principal",
-    "urlMaps": "https://www.google.com/maps/place/SIC+Experts/data=!4m7!3m6!1s0x4cc9db0870a1a8ad:0x2337f38bfddeb634!8m2!3d45.302584!4d-72.7198706!16s%2Fg%2F11h0yvpkcz!19sChIJraihcAjbyUwRNLbe_YvzNyM?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "info@sicexperts.com",
-    "type_atelier": "entreprise de fabrication et transformation",
-    "dateCollecte": "2026-05-10T13:21:07Z"
   },
   {
     "nom": "BOPM Experts Conseils",
@@ -327,7 +181,7 @@
     "siteWeb": "http://bopmexperts.com/",
     "urlMaps": "https://www.google.com/maps/place/BOPM+Experts+Conseils/data=!4m7!3m6!1s0x4cc9da3a1c000003:0x6db2bd76622faeb9!8m2!3d45.3119131!4d-72.6618006!16s%2Fg%2F11q2ybfn5_!19sChIJAwAAHDrayUwRua4vYna9sm0?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@bopmexperts.com",
-    "type_atelier": "entreprise de fabrication et transformation",
+    "type_atelier": "services-conseil en genie mecanique",
     "dateCollecte": "2026-05-10T13:21:31Z"
   },
   {
@@ -340,7 +194,7 @@
     "siteWeb": "http://ateliersprecision.ca/",
     "urlMaps": "https://www.google.com/maps/place/Ateliers+de+Pr%C3%A9cision+Rive+Sud/data=!4m7!3m6!1s0x4cc90019837aaaab:0xa8379e798a6a5e0f!8m2!3d45.5782525!4d-73.258951!16s%2Fg%2F11vsksd_fj!19sChIJq6p6gxkAyUwRD15qinmeN6g?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@3desco.ca",
-    "type_atelier": "entreprise de fabrication et transformation",
+    "type_atelier": "fabricant de machines et usinage de precision",
     "dateCollecte": "2026-05-10T13:22:26Z"
   },
   {
@@ -353,34 +207,8 @@
     "siteWeb": "http://www.ateliersoudex.com/",
     "urlMaps": "https://www.google.com/maps/place/Atelier+Soudex+SOC+enr/data=!4m7!3m6!1s0x4cc8ff96ec9294b9:0xde91c89fbbf7cf5d!8m2!3d45.6088442!4d-73.2420563!16s%2Fg%2F11hcz49yhy!19sChIJuZSS7Jb_yEwRXc_3u5_Ikd4?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@ateliersoudex.com",
-    "type_atelier": "atelier de fabrication industrielle",
+    "type_atelier": "atelier de ferronnerie et soudure industrielle",
     "dateCollecte": "2026-05-10T13:22:36Z"
-  },
-  {
-    "nom": "Revêtements Métalliques Gaétan Lajoie (RMGL)",
-    "categorie_gmap": "Entreprise de construction",
-    "note": 4.3,
-    "nbAvis": 16,
-    "tel": "+1 450-464-5607",
-    "adresse": "1555 Rue de l'Industrie, Beloeil, QC J3G 0S5, Canada",
-    "siteWeb": "http://www.rmgl.ca/",
-    "urlMaps": "https://www.google.com/maps/place/Rev%C3%AAtements+M%C3%A9talliques+Ga%C3%A9tan+Lajoie+%28RMGL%29/data=!4m7!3m6!1s0x4cc8ffd781f6cfbd:0x7a04414c35006194!8m2!3d45.595008!4d-73.2202452!16s%2Fg%2F11b5wp43np!19sChIJvc_2gdf_yEwRlGEANUxBBHo?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "service.estimation@rmgl.ca",
-    "type_atelier": "entreprise de fabrication et transformation",
-    "dateCollecte": "2026-05-10T13:23:03Z"
-  },
-  {
-    "nom": "Revêtements Extérieurs SMJ",
-    "categorie_gmap": "Entrepreneur",
-    "note": 4.8,
-    "nbAvis": 50,
-    "tel": "+1 450-446-0606",
-    "adresse": "2867 Rue de l'Industrie, Saint-Mathieu-de-Beloeil, QC J3G 0S3, Canada",
-    "siteWeb": "http://www.revetementssmj.com/",
-    "urlMaps": "https://www.google.com/maps/place/Rev%C3%AAtements+Ext%C3%A9rieurs+SMJ/data=!4m7!3m6!1s0x4cc855436d2f692f:0x413e0d667f106ad0!8m2!3d45.5930569!4d-73.2522791!16s%2Fg%2F1tf3nj9b!19sChIJL2kvbUNVyEwR0GoQf2YNPkE?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "info@revetementssmj.com",
-    "type_atelier": "entreprise de fabrication et transformation",
-    "dateCollecte": "2026-05-10T13:23:56Z"
   },
   {
     "nom": "D.Lavoie Aluminium",
@@ -405,21 +233,8 @@
     "siteWeb": "http://www.simardacon.com/",
     "urlMaps": "https://www.google.com/maps/place/Simar-Dacon+Inc/data=!4m7!3m6!1s0x4cc85541db4895cb:0x51af51c542cc840b!8m2!3d45.5959491!4d-73.2044677!16s%2Fg%2F1w2yz1pm!19sChIJy5VI20FVyEwRC4TMQsVRr1E?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@simar-dacon.com",
-    "type_atelier": "entreprise de fabrication et transformation",
+    "type_atelier": "fabricant de machines industrielles",
     "dateCollecte": "2026-05-10T13:24:32Z"
-  },
-  {
-    "nom": "scidex",
-    "categorie_gmap": "Entreprise de construction",
-    "note": 4.2,
-    "nbAvis": 11,
-    "tel": "+1 450-527-1717",
-    "adresse": "1505 de l'industrie, Beloeil, QC J3G 0S5, Canada",
-    "siteWeb": "http://scidex.ca/",
-    "urlMaps": "https://www.google.com/maps/place/scidex/data=!4m7!3m6!1s0x4cc8555c7a90a8ef:0x2e6a88510f1e0253!8m2!3d45.5948018!4d-73.2186826!16s%2Fg%2F11f5421fxb!19sChIJ76iQelxVyEwRUwIeD1GIai4?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "info@scidex.ca",
-    "type_atelier": "entreprise de fabrication et transformation",
-    "dateCollecte": "2026-05-10T13:24:38Z"
   },
   {
     "nom": "Les Entreprises Fabexp",
@@ -431,46 +246,7 @@
     "siteWeb": "https://fabexp.ca/",
     "urlMaps": "https://www.google.com/maps/place/Les+Entreprises+Fabexp/data=!4m7!3m6!1s0x4cc901e993b14535:0x196451d4b51124a1!8m2!3d45.5806334!4d-73.3200608!16s%2Fg%2F11b5pjcdh8!19sChIJNUWxk-kByUwRoSQRtdRRZBk?authuser=0&hl=fr&rclk=1",
     "emailTrouve": "info@fabexp.ca",
-    "type_atelier": "entreprise de fabrication et transformation",
+    "type_atelier": "atelier de fabrication et transformation metallique",
     "dateCollecte": "2026-05-10T13:24:44Z"
-  },
-  {
-    "nom": "Concept Métal Design Inc.",
-    "categorie_gmap": "Aciériste",
-    "note": 5.0,
-    "nbAvis": 1,
-    "tel": "+1 438-508-1448",
-    "adresse": "2475 Bd Industriel, Chambly, QC J3L 4W3, Canada",
-    "siteWeb": "https://www.conceptmetaldesign.ca/",
-    "urlMaps": "https://www.google.com/maps/place/Concept+M%C3%A9tal+Design+Inc./data=!4m7!3m6!1s0x4cc9a7005f82e8ad:0xf8315efc3e521451!8m2!3d45.4264398!4d-73.2767686!16s%2Fg%2F11x6t7116z!19sChIJreiCXwCnyUwRURRSPvxeMfg?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "info@conceptmetaldesign.ca",
-    "type_atelier": "entreprise de fabrication et transformation",
-    "dateCollecte": "2026-05-10T13:25:06Z"
-  },
-  {
-    "nom": "Lagacé & Frère Inc",
-    "categorie_gmap": "Magasin d'accessoires pour poids lourds",
-    "note": 4.6,
-    "nbAvis": 32,
-    "tel": "+1 450-446-5000",
-    "adresse": "1285 Rue de l'Industrie, Beloeil, QC J3G 0S5, Canada",
-    "siteWeb": "https://www.benneslagace.com/",
-    "urlMaps": "https://www.google.com/maps/place/Lagac%C3%A9+%26+Fr%C3%A8re+Inc/data=!4m7!3m6!1s0x4cc8554348dceceb:0xc8d01c310204e66d!8m2!3d45.5951966!4d-73.2129879!16s%2Fg%2F1vvr5v13!19sChIJ6-zcSENVyEwRbeYEAjEc0Mg?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "info@benneslagace.com",
-    "type_atelier": "entreprise de fabrication et transformation",
-    "dateCollecte": "2026-05-10T13:25:36Z"
-  },
-  {
-    "nom": "Garages et Cabanons Fontaine",
-    "categorie_gmap": "Entreprise de construction",
-    "note": 4.3,
-    "nbAvis": 688,
-    "tel": "+1 450-536-3563",
-    "adresse": "3497 Rue de l'Industrie, Saint-Mathieu-de-Beloeil, QC J3G 0R9, Canada",
-    "siteWeb": "https://cabanons.com/",
-    "urlMaps": "https://www.google.com/maps/place/Garages+et+Cabanons+Fontaine/data=!4m7!3m6!1s0x4cc855436d2f692f:0x815310b33817846b!8m2!3d45.5902807!4d-73.2736936!16s%2Fg%2F1vk6yv8m!19sChIJL2kvbUNVyEwRa4QXOLMQU4E?authuser=0&hl=fr&rclk=1",
-    "emailTrouve": "fontaine@cabanons.com",
-    "type_atelier": "entreprise de fabrication et transformation",
-    "dateCollecte": "2026-05-10T13:26:09Z"
   }
 ]
