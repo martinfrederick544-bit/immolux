@@ -72,8 +72,18 @@ MOTS_CLES = [
 def villes_non_scrapees():
     return [v for villes in VILLES_DISPO.values() for v in villes if v not in VILLES_FAITES]
 
+PRIORITE_VILLES = [
+    # Grandes villes en premier (plus de résultats)
+    "Gatineau", "Hull", "Bromont", "Beloeil", "Saint-Bruno",
+    "Cowansville", "Farnham", "Iberville", "Saint-Constant",
+    "Sainte-Adele", "Prevost", "Matane", "Amos", "Gaspe",
+]
+
 def generer_searches(n_villes=6):
-    villes = villes_non_scrapees()[:n_villes]
+    dispo = villes_non_scrapees()
+    # Priorité aux grandes villes
+    triees = [v for v in PRIORITE_VILLES if v in dispo] + [v for v in dispo if v not in PRIORITE_VILLES]
+    villes = triees[:n_villes]
     urls = []
     for ville in villes:
         slug = ville.replace(" ", "+")
@@ -102,6 +112,8 @@ RE_EMAIL = re.compile(r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}", re.IG
 EXCLUS   = {
     "sentry.io","example.com","wix.com","wordpress.com","protection","placeholder",
     ".png",".jpg",".svg","domain","noreply","no-reply","donotreply",
+    "yoursite","yourdomain","test.com","info@info","email@email",
+    "admin@admin","mail@mail",
 }
 
 def scraper_emails(url):
@@ -245,6 +257,7 @@ with sync_playwright() as pw:
         locale="fr-CA",
         viewport={"width": 1440, "height": 900},
         user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36",
+        ignore_https_errors=True,
     )
     page = ctx.new_page()
 
