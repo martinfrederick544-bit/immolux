@@ -10,5 +10,29 @@
     "emailTrouve": "info@yoursite.com",
     "type_atelier": "atelier de fabrication mecanique",
     "dateCollecte": "2026-05-10T12:32:09Z"
+  },
+  {
+    "nom": "Lotus Design Inc.",
+    "note": 5.0,
+    "nbAvis": 41,
+    "tel": "+1 819-639-6816",
+    "adresse": "367 Mnt de la Source unit 314, Cantley, Quebec J8V 0G6, Canada",
+    "siteWeb": "http://www.lotus-design.ca/",
+    "urlMaps": "https://www.google.com/maps/place/Lotus+Design+Inc./data=!4m7!3m6!1s0x4cce1d3d12449e03:0xa5f04945bec61812!8m2!3d45.5347235!4d-75.7729177!16s%2Fg%2F11fvnpk7z8!19sChIJA55EEj0dzkwREhjGvkVJ8KU?authuser=0&hl=fr&rclk=1",
+    "emailTrouve": "info@lotus-design.ca",
+    "type_atelier": "atelier de fabrication mecanique",
+    "dateCollecte": "2026-05-10T12:38:22Z"
+  },
+  {
+    "nom": "Metalium Inc",
+    "note": 3.8,
+    "nbAvis": 16,
+    "tel": "+1 819-643-5220",
+    "adresse": "1724 Rue Atmec, Gatineau, QC J8R 3Y4, Canada",
+    "siteWeb": "http://www.metalium.com/",
+    "urlMaps": "https://www.google.com/maps/place/Metalium+Inc/data=!4m7!3m6!1s0x4cce10d01ea65e85:0x69aee2a5b28bb8f7!8m2!3d45.5111649!4d-75.5591765!16s%2Fg%2F1tg812b2!19sChIJhV6mHtAQzkwR97iLsqXirmk?authuser=0&hl=fr&rclk=1",
+    "emailTrouve": "info@metalium.com",
+    "type_atelier": "atelier de fabrication mecanique",
+    "dateCollecte": "2026-05-10T12:38:53Z"
   }
 ]

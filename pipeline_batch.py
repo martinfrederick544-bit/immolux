@@ -273,12 +273,19 @@ with sync_playwright() as pw:
         except Exception as e:
             print(f"  ERR navigation : {e}")
             continue
-        page.wait_for_timeout(3000)
-        for btn in ["Tout accepter","Accept all"]:
+        page.wait_for_timeout(6000)
+        for btn in ["Tout accepter","Accept all","Accepter tout","J'accepte"]:
             try:
-                page.locator(f'button:has-text("{btn}")').first.click(timeout=2000)
-                break
+                b = page.locator(f'button:has-text("{btn}")')
+                if b.count() > 0:
+                    b.first.click(timeout=2000)
+                    page.wait_for_timeout(3000)
+                    break
             except: pass
+        # Attendre que les résultats apparaissent
+        try:
+            page.locator('div[role="article"]').first.wait_for(timeout=8000)
+        except: pass
         for _ in range(20):
             try:
                 panneau = page.locator('div[role="feed"]').first
