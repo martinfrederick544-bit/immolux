@@ -166,18 +166,28 @@ def trouver_email(site):
 
 # Catégories Google Maps hors-domaine → lead rejeté
 CATEGORIES_EXCLUES = {
-    "couvreur","toiture","roofing","peintre","plombier","plomberie","électricien",
-    "électricité","chauffage","climatisation","hvac","restauration","restaurant",
-    "épicerie","boulangerie","coiffeur","salon","nettoyage","déménagement",
-    "assurance","comptable","avocat","notaire","pharmacie","clinique","médecin",
-    "dentiste","optique","garderie","école","agence immobilière","hôtel","motel",
-    "détaillant","boutique","vêtement","sport","loisir","tourisme",
+    "couvreur","toiture","roofing","peintre","plombier","plomberie","electricien",
+    "electricite","chauffage","climatisation","hvac","restauration","restaurant",
+    "epicerie","boulangerie","coiffeur","salon","nettoyage","demenagement",
+    "assurance","comptable","avocat","notaire","pharmacie","clinique","medecin",
+    "dentiste","optique","garderie","ecole","agence immobiliere","hotel","motel",
+    "detaillant","boutique","vetement","sport","loisir","tourisme",
+    "cloisons seches","cloison","drywall","entrepreneur general","paysagiste",
+    "excavation","beton","ciment","poids lourds","camion","transport",
 }
+
+def _norm(s):
+    """Lowercase + retire accents pour comparaison."""
+    s = (s or "").lower()
+    for a, b in [("é","e"),("è","e"),("ê","e"),("ë","e"),("à","a"),("â","a"),
+                 ("ô","o"),("ù","u"),("û","u"),("ü","u"),("î","i"),("ï","i"),("ç","c")]:
+        s = s.replace(a, b)
+    return s
 
 def categoriser(categorie_gmap, nom):
     """Retourne (type_atelier, hors_domaine). hors_domaine=True si le lead doit être rejeté."""
-    c = (categorie_gmap or "").lower().strip()
-    n = (nom or "").lower()
+    c = _norm(categorie_gmap)
+    n = _norm(nom)
     texte = c + " " + n
 
     # Vérifier si hors-domaine
@@ -227,6 +237,15 @@ def categoriser(categorie_gmap, nom):
         "industrie":                       "atelier de fabrication industrielle",
         "equipement industriel":           "fournisseur d'equipement industriel",
         "maintenance industrielle":        "maintenance et reparation industrielle",
+        "fabricant de machines":           "fabricant de machines industrielles",
+        "construction de machines":        "fabricant de machines industrielles",
+        "fabricant":                       "atelier de fabrication metallique",
+        "manufacture de metal":            "atelier de fabrication metallique",
+        "acieriste":                       "distributeur et transformateur acier",
+        "ingenieur en mecanique":          "services d'ingenierie mecanique",
+        "ingenierie":                      "services d'ingenierie mecanique",
+        "entreprise de construction":      "atelier de fabrication et construction",
+        "entrepreneur":                    "entrepreneur en fabrication metallique",
     }
     for key, val in CAT_MAP.items():
         if key in c:
