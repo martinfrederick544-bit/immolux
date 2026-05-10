@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "nom": "L'Atelier collaboratif de l'Outaouais INC.",
+    "note": 5.0,
+    "nbAvis": 40,
+    "tel": "+1 819-771-1212",
+    "adresse": "450 Rue de Vernon, Gatineau, QC J9J 3K5, Canada",
+    "siteWeb": "http://acoutaouais.ca/",
+    "urlMaps": "https://www.google.com/maps/place/L%27Atelier+collaboratif+de+l%27Outaouais+INC./data=!4m7!3m6!1s0x4cce0300719b2c7b:0xc44df100a1469186!8m2!3d45.4434804!4d-75.7995435!16s%2Fg%2F11vt7j8_wy!19sChIJeyybcQADzkwRhpFGoQDxTcQ?authuser=0&hl=fr&rclk=1",
+    "emailTrouve": "info@yoursite.com",
+    "type_atelier": "atelier de fabrication mecanique",
+    "dateCollecte": "2026-05-10T12:32:09Z"
+  }
+]
