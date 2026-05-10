@@ -172,8 +172,16 @@ CATEGORIES_EXCLUES = {
     "assurance","comptable","avocat","notaire","pharmacie","clinique","medecin",
     "dentiste","optique","garderie","ecole","agence immobiliere","hotel","motel",
     "detaillant","boutique","vetement","sport","loisir","tourisme",
-    "cloisons seches","cloison","drywall","entrepreneur general","paysagiste",
+    "cloisons seches","cloison","drywall","paysagiste",
     "excavation","beton","ciment","poids lourds","camion","transport",
+}
+
+# Mots dans le NOM de l'entreprise → rejet automatique peu importe la catégorie GMap
+NOMS_EXCLUS = {
+    "toiture","toitures","couvreur","roofing","revetement","revetements",
+    "revêtement","revêtements","exterieur","exterieurs","extérieur","extérieurs",
+    "siding","bardage","cloison","drywall","paysage","paysagiste",
+    "excavation","beton","ciment","cabanon","abri",
 }
 
 def _norm(s):
@@ -190,9 +198,13 @@ def categoriser(categorie_gmap, nom):
     n = _norm(nom)
     texte = c + " " + n
 
-    # Vérifier si hors-domaine
+    # Vérifier si hors-domaine via catégorie GMap
     for exclu in CATEGORIES_EXCLUES:
         if exclu in c:
+            return None, True
+    # Vérifier si hors-domaine via le nom de l'entreprise
+    for mot in NOMS_EXCLUS:
+        if mot in n:
             return None, True
 
     # Correspondances précises basées sur la catégorie GMap d'abord
