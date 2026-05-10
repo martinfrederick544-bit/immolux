@@ -164,21 +164,92 @@ def trouver_email(site):
     emails.sort(key=score)
     return emails[0]
 
-def detecter_type(nom):
+# Catégories Google Maps hors-domaine → lead rejeté
+CATEGORIES_EXCLUES = {
+    "couvreur","toiture","roofing","peintre","plombier","plomberie","électricien",
+    "électricité","chauffage","climatisation","hvac","restauration","restaurant",
+    "épicerie","boulangerie","coiffeur","salon","nettoyage","déménagement",
+    "assurance","comptable","avocat","notaire","pharmacie","clinique","médecin",
+    "dentiste","optique","garderie","école","agence immobilière","hôtel","motel",
+    "détaillant","boutique","vêtement","sport","loisir","tourisme",
+}
+
+def categoriser(categorie_gmap, nom):
+    """Retourne (type_atelier, hors_domaine). hors_domaine=True si le lead doit être rejeté."""
+    c = (categorie_gmap or "").lower().strip()
     n = (nom or "").lower()
-    if "polissage" in n or "powdercoat" in n: return "atelier de polissage et revetement poudre"
-    if "decoupe" in n or "decoupage" in n:    return "atelier de decoupage industriel"
-    if "laser" in n:                           return "atelier de decoupe laser"
-    if "plastique" in n:                       return "atelier d'usinage plastique"
-    if "soudure" in n and "usinage" in n:      return "atelier d'usinage et soudure"
-    if "soudure" in n or "soudage" in n:       return "atelier de soudure"
-    if "transmission" in n:                    return "atelier de mecanique et transmission"
-    if "mecanique" in n and "pneu" not in n:   return "atelier de mecanique industrielle"
-    if "garage" in n or "pneu" in n:           return "atelier mecanique auto"
-    if "precision" in n:                       return "atelier d'usinage de precision"
-    if any(k in n for k in ["usinage","machine shop","machinerie"]): return "atelier d'usinage"
-    if "fabrication" in n or "industrie" in n: return "atelier de fabrication metallique"
-    return "atelier de fabrication mecanique"
+    texte = c + " " + n
+
+    # Vérifier si hors-domaine
+    for exclu in CATEGORIES_EXCLUES:
+        if exclu in c:
+            return None, True
+
+    # Correspondances précises basées sur la catégorie GMap d'abord
+    CAT_MAP = {
+        "atelier d'usinage":               "atelier d'usinage",
+        "usinage":                         "atelier d'usinage",
+        "machine shop":                    "atelier d'usinage",
+        "atelier de soudure":              "atelier de soudure",
+        "soudure":                         "atelier de soudure",
+        "welding":                         "atelier de soudure",
+        "decoupe laser":                   "atelier de decoupe laser",
+        "laser":                           "atelier de decoupe laser",
+        "fabrication metallique":          "atelier de fabrication metallique",
+        "fabrication de metal":            "atelier de fabrication metallique",
+        "metal fabricator":                "atelier de fabrication metallique",
+        "tolerie":                         "atelier de tolerie industrielle",
+        "sheet metal":                     "atelier de tolerie industrielle",
+        "polissage":                       "atelier de polissage et traitement de surface",
+        "chromage":                        "atelier de polissage et traitement de surface",
+        "placage":                         "atelier de polissage et traitement de surface",
+        "traitement de surface":           "atelier de polissage et traitement de surface",
+        "hydraulique":                     "service hydraulique industriel",
+        "pneumatique":                     "service hydraulique industriel",
+        "decoupe":                         "atelier de decoupe industrielle",
+        "estampage":                       "atelier d'estampage et emboutissage",
+        "emboutissage":                    "atelier d'estampage et emboutissage",
+        "fonderie":                        "fonderie et moulage",
+        "moulage":                         "fonderie et moulage",
+        "injection plastique":             "atelier d'usinage plastique",
+        "plastique":                       "atelier d'usinage plastique",
+        "mecanique industrielle":          "atelier de mecanique industrielle",
+        "mecanique generale":              "atelier de mecanique industrielle",
+        "transmission":                    "atelier de mecanique et transmission",
+        "aluminium":                       "fabricant et distributeur aluminium",
+        "acier":                           "distributeur et transformateur acier",
+        "metal":                           "atelier de fabrication metallique",
+        "precision":                       "atelier d'usinage de precision",
+        "cnc":                             "atelier d'usinage CNC",
+        "tournage":                        "atelier d'usinage - tournage/fraisage",
+        "fraisage":                        "atelier d'usinage - tournage/fraisage",
+        "services industriels":            "services industriels specialises",
+        "industrie":                       "atelier de fabrication industrielle",
+        "equipement industriel":           "fournisseur d'equipement industriel",
+        "maintenance industrielle":        "maintenance et reparation industrielle",
+    }
+    for key, val in CAT_MAP.items():
+        if key in c:
+            return val, False
+
+    # Fallback sur le nom si catégorie inconnue
+    if "polissage" in texte or "chromage" in texte:  return "atelier de polissage et traitement de surface", False
+    if "laser" in texte:                              return "atelier de decoupe laser", False
+    if "plastique" in texte:                          return "atelier d'usinage plastique", False
+    if "soudure" in texte and "usinage" in texte:     return "atelier d'usinage et soudure", False
+    if "soudure" in texte or "soudage" in texte or "welding" in texte: return "atelier de soudure", False
+    if "hydrauli" in texte:                           return "service hydraulique industriel", False
+    if "transmission" in texte:                       return "atelier de mecanique et transmission", False
+    if "tolerie" in texte or "toleri" in texte:       return "atelier de tolerie industrielle", False
+    if "aluminium" in texte or "aluminum" in texte:   return "fabricant et distributeur aluminium", False
+    if "acier" in texte or "steel" in texte:          return "distributeur et transformateur acier", False
+    if "precision" in texte:                          return "atelier d'usinage de precision", False
+    if "usinage" in texte or "machining" in texte or "machine shop" in texte: return "atelier d'usinage", False
+    if "fabrication" in texte or "industrie" in texte or "metal" in texte: return "atelier de fabrication metallique", False
+    if "mecanique" in texte:                          return "atelier de mecanique industrielle", False
+
+    # Si on n'a aucun indice, on retourne un type générique mais pas "mécanique"
+    return "entreprise de fabrication et transformation", False
 
 def extraire_fiche(page):
     d = {}
@@ -188,6 +259,11 @@ def extraire_fiche(page):
             if t: d["nom"] = t; break
         except: pass
     d.setdefault("nom","")
+    # Catégorie Google Maps (bouton sous le nom)
+    d["categorie_gmap"] = ""
+    try:
+        d["categorie_gmap"] = page.locator("button.DkEaL").first.text_content(timeout=2000).strip()
+    except: pass
     d["note"], d["nbAvis"] = None, 0
     try:
         bloc = page.locator("div.F7nice").first.text_content(timeout=3000)
@@ -330,6 +406,11 @@ with sync_playwright() as pw:
                 if nom_norm in noms_existants: continue
                 noms_existants.add(nom_norm)
                 if d["nbAvis"] < MIN_AVIS: continue
+                # Catégoriser et filtrer les hors-domaine
+                type_atelier, hors_domaine = categoriser(d.get("categorie_gmap",""), d["nom"])
+                if hors_domaine:
+                    print(f"  ✗  {d['nom'][:50]}  (hors-domaine: {d.get('categorie_gmap','')})")
+                    continue
                 email = trouver_email(d.get("siteWeb",""))
                 if not email:
                     print(f"  ✗  {d['nom'][:50]}  (pas d'email)")
@@ -338,7 +419,7 @@ with sync_playwright() as pw:
                     print(f"  ✗  {d['nom'][:50]}  (email dupliqué)")
                     continue
                 d["emailTrouve"]  = email
-                d["type_atelier"] = detecter_type(d["nom"])
+                d["type_atelier"] = type_atelier
                 d["dateCollecte"] = time.strftime("%Y-%m-%dT%H:%M:%SZ")
                 cid = pousser_ghl(d)
                 if not cid:
@@ -346,7 +427,7 @@ with sync_playwright() as pw:
                     continue
                 emails_existants.add(email)
                 leads_ajoutes.append(d)
-                print(f"  ✓  [{len(leads_ajoutes):02}/{OBJECTIF}] {d['nom'][:40]:<40}  {email}")
+                print(f"  ✓  [{len(leads_ajoutes):02}/{OBJECTIF}] {d['nom'][:35]:<35}  {d['type_atelier'][:30]:<30}  {email}")
                 time.sleep(0.3)
             except Exception as e:
                 print(f"  ERR  {str(e)[:60]}")
