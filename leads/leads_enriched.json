@@ -238,5 +238,18 @@
     "emailTrouve": "vincent@toiturescossette.ca",
     "type_atelier": "atelier de fabrication mecanique",
     "dateCollecte": "2026-05-10T13:01:58Z"
+  },
+  {
+    "nom": "Soudure Marc Marine",
+    "categorie_gmap": "Fabricant",
+    "note": 3.5,
+    "nbAvis": 31,
+    "tel": "+1 819-893-9030",
+    "adresse": "495 Chem. Industriel, Gatineau, QC J8R 0J9, Canada",
+    "siteWeb": "http://www.marcmarine.ca/",
+    "urlMaps": "https://www.google.com/maps/place/Soudure+Marc+Marine/data=!4m7!3m6!1s0x4cce1a665e7d7779:0x96ecfba93bbfa02f!8m2!3d45.5166854!4d-75.5494461!16s%2Fg%2F11b6dq_v8t!19sChIJeXd9XmYazkwRL6C_O6n77JY?authuser=0&hl=fr&rclk=1",
+    "emailTrouve": "soumissions@marcmarine.ca",
+    "type_atelier": "atelier de soudure",
+    "dateCollecte": "2026-05-10T13:10:14Z"
   }
 ]
