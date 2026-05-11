@@ -177,12 +177,15 @@ CATEGORIES_EXCLUES = {
 }
 
 # Mots dans le NOM de l'entreprise → rejet automatique peu importe la catégorie GMap
-NOMS_EXCLUS = {
-    "toiture","toitures","couvreur","roofing","revetement","revetements",
-    "revêtement","revêtements","exterieur","exterieurs","extérieur","extérieurs",
-    "siding","bardage","cloison","drywall","paysage","paysagiste",
-    "excavation","beton","ciment","cabanon","abri",
-}
+# Utiliser des mots complets uniquement (regex \b) pour éviter les faux positifs
+# ex: "abri" ne doit pas matcher "fabrication"
+NOMS_EXCLUS = [
+    r"\btoiture",r"\bcouvreur",r"\broofing",r"\brevetement",r"\bexterieur",
+    r"\bsiding\b",r"\bbardage\b",r"\bcloison\b",r"\bdrywall\b",
+    r"\bpaysage\b",r"\bpaysagiste\b",r"\bexcavation\b",r"\bbeton\b",
+    r"\bciment\b",r"\bcabanon\b",r"\babri\b",
+]
+_NOMS_EXCLUS_RE = re.compile("|".join(NOMS_EXCLUS))
 
 def _norm(s):
     """Lowercase + retire accents pour comparaison."""
@@ -203,9 +206,8 @@ def categoriser(categorie_gmap, nom):
         if exclu in c:
             return None, True
     # Vérifier si hors-domaine via le nom de l'entreprise
-    for mot in NOMS_EXCLUS:
-        if mot in n:
-            return None, True
+    if _NOMS_EXCLUS_RE.search(n):
+        return None, True
 
     # Correspondances précises basées sur la catégorie GMap d'abord
     CAT_MAP = {
