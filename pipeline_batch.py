@@ -349,9 +349,15 @@ def pousser_ghl(lead):
     }
     if tel: payload["phone"] = tel
     r = requests.post(f"{BASE}/contacts/", headers=GHL_H, json=payload, timeout=15)
-    if r.status_code not in (200, 201):
+    if r.status_code in (200, 201):
+        cid = (r.json().get("contact") or r.json()).get("id")
+    elif r.status_code == 400:
+        # Contact dupliqué — GHL retourne l'ID existant dans meta
+        cid = r.json().get("meta", {}).get("contactId")
+        if not cid:
+            return None
+    else:
         return None
-    cid = (r.json().get("contact") or r.json()).get("id")
     time.sleep(0.4)
     requests.post(f"{BASE}/opportunities/", headers=GHL_H, json={
         "pipelineId": PIPE_ID,
