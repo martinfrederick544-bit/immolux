@@ -183,7 +183,8 @@ NOMS_EXCLUS = [
     r"\btoiture",r"\bcouvreur",r"\broofing",r"\brevetement",r"\bexterieur",
     r"\bsiding\b",r"\bbardage\b",r"\bcloison\b",r"\bdrywall\b",
     r"\bpaysage\b",r"\bpaysagiste\b",r"\bexcavation\b",r"\bbeton\b",
-    r"\bciment\b",r"\bcabanon\b",r"\babri\b",
+    r"\bciment\b",r"\bcabanon\b",r"\babri\b",r"\becocentre\b",r"\bécocentre\b",
+    r"\brecyclage\b",r"\bmateriaux\brusses\b",
 ]
 _NOMS_EXCLUS_RE = re.compile("|".join(NOMS_EXCLUS))
 
