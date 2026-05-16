@@ -1041,5 +1041,18 @@
     "emailTrouve": "info@gmprecision.ca",
     "type_atelier": "atelier d'usinage",
     "dateCollecte": "2026-05-15T21:17:14Z"
+  },
+  {
+    "nom": "Écocentre régional de La Vallée-du-Richelieu",
+    "categorie_gmap": "Centre de recyclage",
+    "note": 4.1,
+    "nbAvis": 78,
+    "tel": "",
+    "adresse": "60 Rue Fisher, Mont-Saint-Hilaire, QC J3H 0K3, Canada",
+    "siteWeb": "https://www.mrcvr.ca/services/matieres-residuelles/ecocentre/",
+    "urlMaps": "https://www.google.com/maps/place/%C3%89cocentre+r%C3%A9gional+de+La+Vall%C3%A9e-du-Richelieu/@45.586028,-73.1508466,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc8550c44bcb2a9:0xbcf39d2ecd09bcfc!8m2!3d45.586028!4d-73.1508466!16s%2Fg%2F11rk2f51ht?authuser=0&hl=fr&entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D",
+    "emailTrouve": "info@mrcvr.ca",
+    "type_atelier": "entreprise de fabrication et transformation",
+    "dateCollecte": "2026-05-16T16:48:53Z"
   }
 ]
