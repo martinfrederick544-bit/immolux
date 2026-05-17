@@ -79,10 +79,12 @@ def villes_non_scrapees():
     return [v for villes in VILLES_DISPO.values() for v in villes if v not in VILLES_FAITES]
 
 PRIORITE_VILLES = [
-    # Grandes villes en premier (plus de résultats)
-    "Gatineau", "Hull", "Bromont", "Beloeil", "Saint-Bruno",
-    "Cowansville", "Farnham", "Iberville", "Saint-Constant",
-    "Sainte-Adele", "Prevost", "Matane", "Amos", "Gaspe",
+    # Nouvelles régions non épuisées
+    "Donnacona", "Pont-Rouge", "Saint-Raymond",
+    "Saint-Tite", "Louiseville", "Yamachiche",
+    "Saint-Lin", "Lanoraie", "Berthierville", "Lavaltrie",
+    "Kingsey-Falls", "Warwick", "Arthabaska",
+    "Buckingham", "Maniwaki", "Thurso",
 ]
 
 def generer_searches(n_villes=6):
