@@ -60,6 +60,10 @@ VILLES_DISPO = {
                               "Saint-Bruno","Saint-Constant","Sainte-Catherine","Delson","Saint-Luc","Napierville"],
     "Laurentides":           ["Saint-Donat","Prevost","Sainte-Adele","Morin-Heights","Saint-Sauveur","Lac-des-Iles"],
     "Chaudiere-Appalaches":  ["Montmagny","Saint-Jean-Port-Joli","Saint-Pamphile","Saint-Anselme","Sainte-Henedine"],
+    "Capitale-Nationale":    ["Donnacona","Pont-Rouge","Saint-Raymond","Sainte-Anne-de-Beaupre","Montmagny-est"],
+    "Mauricie-extra":        ["Saint-Tite","Louiseville","Yamachiche","Sainte-Anne-de-la-Perade"],
+    "Lanaudiere-extra":      ["Saint-Lin","Lanoraie","Berthierville","Saint-Gabriel","Lavaltrie"],
+    "Centre-du-Quebec-extra":["Kingsey-Falls","Warwick","Arthabaska","Daveluyville"],
 }
 
 MOTS_CLES = [
@@ -67,6 +71,8 @@ MOTS_CLES = [
     "fabrication+metallique",
     "usinage+soudure",
     "machine+shop+Quebec",
+    "reparation+mecanique+industrielle",
+    "services+industriels+usinage",
 ]
 
 def villes_non_scrapees():
