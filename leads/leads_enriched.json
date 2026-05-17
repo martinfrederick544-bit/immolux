@@ -1314,5 +1314,31 @@
     "emailTrouve": "info@ateliermjv.com",
     "type_atelier": "atelier d'usinage",
     "dateCollecte": "2026-05-17T17:20:37Z"
+  },
+  {
+    "nom": "Métal Perreault Inc",
+    "categorie_gmap": "Manufacture de métal",
+    "note": 3.0,
+    "nbAvis": 4,
+    "tel": "+1 418-285-4499",
+    "adresse": "167 Rue Armand Bombardier, Donnacona, QC G3M 1V4, Canada",
+    "siteWeb": "http://www.metalperreault.com/",
+    "urlMaps": "https://www.google.com/maps/place/M%C3%A9tal+Perreault+Inc/data=!4m7!3m6!1s0x4cc77c27bc66a50b:0x21e204f28278a6b0!8m2!3d46.6844506!4d-71.7223049!16s%2Fg%2F1tdk4st_!19sChIJC6VmvCd8x0wRsKZ4gvIE4iE?authuser=0&hl=fr&rclk=1",
+    "emailTrouve": "info@metalperreault.com",
+    "type_atelier": "atelier de fabrication metallique",
+    "dateCollecte": "2026-05-17T18:15:17Z"
+  },
+  {
+    "nom": "Donnacona Métal Inc",
+    "categorie_gmap": "Fournisseur d'équipements industriels",
+    "note": null,
+    "nbAvis": 0,
+    "tel": "+1 418-285-2214",
+    "adresse": "196 Rue Armand Bombardier, Donnacona, QC G3M 2X5, Canada",
+    "siteWeb": "http://www.donnaconametal.com/",
+    "urlMaps": "https://www.google.com/maps/place/Donnacona+M%C3%A9tal+Inc/data=!4m7!3m6!1s0x4cc77c262c43112d:0xcf7b7f41b51e6632!8m2!3d46.683965!4d-71.718245!16s%2Fg%2F1tjt1k0c!19sChIJLRFDLCZ8x0wRMmYetUF_e88?authuser=0&hl=fr&rclk=1",
+    "emailTrouve": "ventes@donnaconametal.com",
+    "type_atelier": "atelier de fabrication industrielle",
+    "dateCollecte": "2026-05-17T18:15:25Z"
   }
 ]
